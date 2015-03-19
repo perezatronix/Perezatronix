@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi página</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css"/>
+        <link rel="stylesheet" media="only screen and (min-width:530px) and (min-device-width:481px)" href="wide.css"/>
+        <link rel="stylesheet" media="only screen and (max-width:480px) and (min-device-width:481px)" href="smartphone.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" id="calculadora">
+            function calculadora(){
+                var x = prompt("Introducir el alto de la pared en metros:");
+                var y = prompt("Introducir el ancho de la pared en metros:");
+                var s = x*y;
+                var v = window.open("", "MsgWindow", "width=200, height=100");
+                v.document.write("La superficie de la pared es de: <b>"+s+" metros cuadrados.</b>");
+               }            
+        </script>
+      </head>
+    <body>
+        <div id="page-wrap">
+            <header id="h1" class="main">
+                <h1 id="titulo">Mi Página</h1>
+            </header>
+            <nav class="main" id="n1">
+                <blockquote><a href="index.html">Home</a></blockquote>
+                <blockquote><a href="series.html">Mis Series</a></blockquote>
+                <blockquote><a href="peliculas.html">Mis Películas</a></blockquote>
+                <blockquote><a href="saul.html">Saul Goodman Video</a></blockquote>
+                <embed width="220" src="http://www.gifbin.com/bin/052009/1242925128_houseomnomnom.gif">
+            </nav>
+            <section id="s1" class="main">
+                <p>Bienvenido a mi página donde encontraras información sobre mis series y peliculas favoritas.</p>
+                <a href="peliculas.html"><img class="imagenI" src="images/peliculas.png" alt=""/></a>
+                <a href="series.html"><img class="imagenI" src="images/series.png" alt=""/></a>
+            </section>
+            <section id="s2" class="main">
+                <h2>Calculadora de superficie:</h2>
+                <FORM method="GET">
+                    <input name="button2" type="button" onclick='calculadora()' value="Calcular" /> 
+                </FORM>
+            </section>           
+            <footer id="f1" class="main">
+                Diego Pérez Acosta
+            </footer>
+        </div>    
+    </body>
+</html>
